@@ -9,7 +9,6 @@ import java.security.NoSuchAlgorithmException;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import javax.xml.bind.JAXBException;
 import javax.xml.stream.XMLStreamException;
 
 import org.apache.commons.io.FileUtils;
@@ -50,7 +49,7 @@ public class Amt2FlatFileTest {
 	}
 	
 	@Test(groups="files", priority = 1, description = "Tests that the the correct errors are reported by the JUnit xml")
-	public void JUnitContainsCorrectErrors() throws MojoExecutionException, MojoFailureException, IOException, JAXBException, XMLStreamException {
+	public void JUnitContainsCorrectErrors() throws MojoExecutionException, MojoFailureException, IOException, XMLStreamException {
 		Amt2FlatFile amt2FlatFile = new Amt2FlatFile();
 		amt2FlatFile.setInputZipFilePath("target/test-classes/rf2-fails-flat-file-generation-1.0.zip");
 		amt2FlatFile.setOutputFilePath(outFile);
