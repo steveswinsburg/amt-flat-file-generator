@@ -179,14 +179,10 @@ public class Amt2FlatFile extends AbstractMojo {
         if (exitOnError) {
             logger.info("AMT flat file generation will be aborted if any errors are detected");
         } else {
-            logger.warning("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
-            logger.warning("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
             logger.warning(
                 "Configured to continue regardless of detected errors. This is useful for testing pre-release AMT content, "
                         + "but is NOT recommended for any other use! Resultant AMT flat file may be unreliable. "
                         + "Consider rerunning with the -e or --exit-on-error flag set!!!");
-            logger.warning("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
-            logger.warning("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
 
         }
 
